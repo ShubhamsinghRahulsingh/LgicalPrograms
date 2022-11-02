@@ -8,20 +8,24 @@ namespace LogicalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1.FibonacciSeries" + "\n" + "2.PerfectNumber" + "\n" + "3.Exit");
+                Console.WriteLine("1.FibonacciSeries"+"\n"+"2.PerfectNumber"+"\n"+"3.PrimeNumber"+"\n"+"4.Exit");
                 Console.WriteLine("Enter your choice");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
                    case 1:
-                      FibonacciSeries print = new FibonacciSeries();
-                      print.Series(10);
-                   break;
+                        FibonacciSeries print = new FibonacciSeries();
+                        print.Series(10);
+                        break;
                    case 2:
-                       PerfectNumber check = new PerfectNumber();
+                        PerfectNumber check = new PerfectNumber();
                         check.Check(28);
                         break;
-                   case 3:
+                    case 3:
+                        PrimeNumber prime = new PrimeNumber();
+                        prime.CheckPrime(17);
+                        break;
+                   case 4:
                         flag= false;
                         break;
             }  
