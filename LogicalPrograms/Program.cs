@@ -8,7 +8,7 @@ namespace LogicalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\n"+"1.FibonacciSeries"+"\n"+"2.PerfectNumber"+"\n"+"3.PrimeNumber"+"\n"+"4.ReverseNumber"+"\n"+"5.CouponNumber"+"\n"+"6.TemperatureConversion"+"\n"+"7.MonthlyPayment"+"\n"+"8.Exit");
+                Console.WriteLine("\n"+"1.FibonacciSeries"+"\n"+"2.PerfectNumber"+"\n"+"3.PrimeNumber"+"\n"+"4.ReverseNumber"+"\n"+"5.CouponNumber"+"\n"+"6.TemperatureConversion"+"\n"+"7.MonthlyPayment"+"\n"+"8.DayOfWeek"+"\n"+"9.Exit");
                 Console.Write("Enter your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -39,6 +39,9 @@ namespace LogicalPrograms
                         MonthlyPaymentLoan.MonthlyPayment(100000, 10, 5);
                             break;
                     case 8:
+                        WeekDay.DayOfWeek();
+                        break;
+                    case 9:
                         flag= false;
                         break;
             }  
