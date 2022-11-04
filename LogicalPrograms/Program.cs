@@ -8,8 +8,8 @@ namespace LogicalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1.FibonacciSeries"+"\n"+"2.PerfectNumber"+"\n"+"3.PrimeNumber"+"\n"+"4.ReverseNumber"+"\n"+"5.Exit");
-                Console.WriteLine("Enter your choice");
+                Console.WriteLine("\n"+"1.FibonacciSeries"+"\n"+"2.PerfectNumber"+"\n"+"3.PrimeNumber"+"\n"+"4.ReverseNumber"+"\n"+"5.CouponNumber"+"\n"+"6.Exit");
+                Console.Write("Enter your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -30,6 +30,9 @@ namespace LogicalPrograms
                         find.Reverse(359);
                         break;
                     case 5:
+                        CouponNumber.GenerateCoupons(10);
+                        break;
+                    case 6:
                         flag= false;
                         break;
             }  
