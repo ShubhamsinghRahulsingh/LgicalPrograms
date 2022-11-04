@@ -8,7 +8,7 @@ namespace LogicalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\n"+"1.FibonacciSeries"+"\n"+"2.PerfectNumber"+"\n"+"3.PrimeNumber"+"\n"+"4.ReverseNumber"+"\n"+"5.CouponNumber"+"\n"+"6.TemperatureConversion"+"\n"+"7.Exit");
+                Console.WriteLine("\n"+"1.FibonacciSeries"+"\n"+"2.PerfectNumber"+"\n"+"3.PrimeNumber"+"\n"+"4.ReverseNumber"+"\n"+"5.CouponNumber"+"\n"+"6.TemperatureConversion"+"\n"+"7.MonthlyPayment"+"\n"+"8.Exit");
                 Console.Write("Enter your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -36,6 +36,9 @@ namespace LogicalPrograms
                         TempConversion.TemperatureConversion(100);
                         break;
                     case 7:
+                        MonthlyPaymentLoan.MonthlyPayment(100000, 10, 5);
+                            break;
+                    case 8:
                         flag= false;
                         break;
             }  
