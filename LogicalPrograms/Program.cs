@@ -8,7 +8,7 @@ namespace LogicalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\n"+"1.FibonacciSeries"+"\n"+"2.PerfectNumber"+"\n"+"3.PrimeNumber"+"\n"+"4.ReverseNumber"+"\n"+"5.CouponNumber"+"\n"+"6.TemperatureConversion"+"\n"+"7.MonthlyPayment"+"\n"+"8.DayOfWeek"+"\n"+"9.Exit");
+                Console.WriteLine("\n"+"1.FibonacciSeries"+"\n"+"2.PerfectNumber"+"\n"+"3.PrimeNumber"+"\n"+"4.ReverseNumber"+"\n"+"5.CouponNumber"+"\n"+"6.TemperatureConversion"+"\n"+"7.MonthlyPayment"+"\n"+"8.DayOfWeek"+"\n"+"9.StopWatch"+"\n"+"10.exit");
                 Console.Write("Enter your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -42,6 +42,10 @@ namespace LogicalPrograms
                         WeekDay.DayOfWeek();
                         break;
                     case 9:
+                        StopWatch time = new StopWatch();
+                        time.Start();
+                        break;
+                    case 10:
                         flag= false;
                         break;
             }  
